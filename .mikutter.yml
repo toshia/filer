@@ -1,0 +1,11 @@
+---
+slug: :filer
+depends:
+  mikutter: 3.5.0-develop
+  plugin:
+  - gui
+  - intent
+version: '1.0'
+author: toshi_a
+name: Filer
+description: mikutter上でファイルを閲覧するやつです
