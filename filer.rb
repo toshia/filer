@@ -2,7 +2,7 @@
 require_relative "model/directory"
 
 Plugin.create :filer do
-  intent Plugin::Filer::Directory, label: "hoge" do |intent_token|
+  intent Plugin::Filer::Directory, label: "Filer" do |intent_token|
     opendir(intent_token.model)
   end
 
