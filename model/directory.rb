@@ -18,7 +18,7 @@ module Plugin::Filer
       super({ created: ::File.ctime(params[:path]),
               description: "ディレクトリです",
               name: ::File.basename(params[:path]),
-              profile_image_url: "http://4.bp.blogspot.com/-yn703BXL-3U/VuKMXoMqr0I/AAAAAAAA4zA/Qcz_Kz6o0nkp6t1JrsNkdQDFozoBWrSng/s800/computer_folder.png"
+              profile_image_url: Plugin[:filer].get_skin('directory.png')
             }.merge(params))
     end
 
